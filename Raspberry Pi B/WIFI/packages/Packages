@@ -1,0 +1,1185 @@
+Package: base-files
+Version: 199-r2013-8269399d
+Depends: libc, netifd, procd, jsonfilter, fstools, fwtool
+License: GPL-2.0
+Section: base
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 38419
+Filename: base-files_199-r2013-8269399d_arm_arm1176jzf-s_vfp.ipk
+Size: 39440
+SHA256sum: b8b12cad6398bb0f369d6492e9987955a49eaebe5307ba3c8e7c63d6d0b88bd7
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: bcm27xx-gpu-fw
+Version: 2020-01-30-63bdbe0ea609a69f5c0a2212d608ef3d9915a7ad
+Depends: libc
+Section: boot
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 105
+Filename: bcm27xx-gpu-fw_2020-01-30-63bdbe0ea609a69f5c0a2212d608ef3d9915a7ad_arm_arm1176jzf-s_vfp.ipk
+Size: 818
+SHA256sum: 2fc84f3d1a57a93c387a568fce4af81388acb047bae27bb861323d5ba53737b0
+Description:  GPU and kernel boot firmware for bcm27xx.
+
+Package: bcm27xx-userland
+Version: 42ec119e03eb8dffc7c83e2ac0e665e333abbef6-1
+Depends: libc
+Section: utils
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 1316853
+Filename: bcm27xx-userland_42ec119e03eb8dffc7c83e2ac0e665e333abbef6-1_arm_arm1176jzf-s_vfp.ipk
+Size: 1315341
+SHA256sum: 590dc4b6687c9c096633e9c2b73bb698c7658c6281e026d41f1167021558dbe9
+Description:  BCM27xx userland tools including vcgencmd and tvservice.
+
+Package: block-mount
+Version: 2019-08-28-6a61b9ac-3
+Depends: libc, ubox, libubox, libuci, libblobmsg-json, libjson-c
+License: GPL-2.0
+Section: base
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 21455
+Filename: block-mount_2019-08-28-6a61b9ac-3_arm_arm1176jzf-s_vfp.ipk
+Size: 22170
+SHA256sum: fca48f89adcfd48fdc6585a5c2607bc33e1bc1e5efb37afc726c6c7f4dbb02c1
+Description:  Block device mounting and checking
+
+Package: fstools
+Version: 2019-08-28-6a61b9ac-3
+Depends: libc, ubox
+License: GPL-2.0
+Section: base
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 15087
+Filename: fstools_2019-08-28-6a61b9ac-3_arm_arm1176jzf-s_vfp.ipk
+Size: 15775
+SHA256sum: efaf7a3d630dd06c7a3aae3c090dc429d5014e10c0f5e1e2910321dab2ef2459
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 1
+Depends: libc
+Section: utils
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 3345
+Filename: fwtool_1_arm_arm1176jzf-s_vfp.ipk
+Size: 4054
+SHA256sum: 3d7d8a9c0f27b71b6d0d82d68e8f2a49e8f40a87264955511a93ab2d5e8a585d
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: iptables-mod-conntrack-extra
+Version: 1.8.2-2
+Depends: libc, iptables, kmod-ipt-conntrack-extra, kmod-ipt-raw
+License: GPL-2.0
+Section: net
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 9712
+Filename: iptables-mod-conntrack-extra_1.8.2-2_arm_arm1176jzf-s_vfp.ipk
+Size: 10485
+SHA256sum: 0e4db366d428eff1179daf566b5a7f35a7ffac221800c90610387eb6444b1569
+Description:  Extra iptables extensions for connection tracking.
+ 
+ Matches:
+ - connbytes
+ - connlimit
+ - connmark
+ - recent
+ - helper
+ 
+ Targets:
+ - CONNMARK
+ 
+
+Package: iptables-mod-ipopt
+Version: 1.8.2-2
+Depends: libc, iptables, kmod-ipt-ipopt
+License: GPL-2.0
+Section: net
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 12209
+Filename: iptables-mod-ipopt_1.8.2-2_arm_arm1176jzf-s_vfp.ipk
+Size: 12952
+SHA256sum: 618ed0b1c19435a3d037bf24548c956c4ede99f6570a5d16e4c89bcd6864acd8
+Description:  iptables extensions for matching/changing IP packet options.
+ 
+ Matches:
+ - dscp
+ - ecn
+ - length
+ - statistic
+ - tcpmss
+ - unclean
+ - hl
+ 
+ Targets:
+ - DSCP
+ - CLASSIFY
+ - ECN
+ - HL
+ 
+
+Package: iptables-mod-tproxy
+Version: 1.8.2-2
+Depends: libc, iptables, kmod-ipt-tproxy
+License: GPL-2.0
+Section: net
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 2610
+Filename: iptables-mod-tproxy_1.8.2-2_arm_arm1176jzf-s_vfp.ipk
+Size: 3354
+SHA256sum: d1d122dca220751a5b5960690d466357fd3eff0c8a2bbd32ef8fd7104132cfa4
+Description:  Transparent proxy iptables extensions.
+ 
+ Matches:
+ - socket
+ 
+ Targets:
+ - TPROXY
+ 
+
+Package: iptables
+Version: 1.8.2-2
+Depends: libc, kmod-ipt-core, libip4tc, libip6tc, libxtables
+License: GPL-2.0
+Section: net
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 25086
+Filename: iptables_1.8.2-2_arm_arm1176jzf-s_vfp.ipk
+Size: 25840
+SHA256sum: e52391c1686747a6a747f2dcd00c4a50eb7039a2952bc82c2704872e043468a5
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - FLOWOFFLOAD
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: iwinfo
+Version: 2019-09-22-313e8270-1
+Depends: libc, libiwinfo
+License: GPL-2.0
+Section: utils
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 6515
+Filename: iwinfo_2019-09-22-313e8270-1_arm_arm1176jzf-s_vfp.ipk
+Size: 7305
+SHA256sum: 43f82fe20045dc80d017f26b45d396b00bcb64166bc534819747983bcd184704
+Description:  Command line frontend for the wireless information library.
+
+Package: kmod-asn1-decoder
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 2660
+Filename: kmod-asn1-decoder_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 3392
+SHA256sum: a5e24f97a371f6f4d81a4c1d7d0ce6fd3853c4d180ea42ba99f96d7aad2edb38
+Description:  Simple ASN1 decoder
+
+Package: kmod-brcmfmac
+Version: 4.19.101+4.19.98-1-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-cfg80211, kmod-brcmutil, kmod-mmc, kmod-usb-core, brcmfmac-firmware-usb
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 106376
+Filename: kmod-brcmfmac_4.19.101+4.19.98-1-1_arm_arm1176jzf-s_vfp.ipk
+Size: 106957
+SHA256sum: 72fce468b1e8be7e967cca11850f189665ddea43e233ead7e2fe42a7a4036286
+Description:  Kernel module for Broadcom IEEE802.11n USB Wireless cards
+
+Package: kmod-brcmutil
+Version: 4.19.101+4.19.98-1-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 3787
+Filename: kmod-brcmutil_4.19.101+4.19.98-1-1_arm_arm1176jzf-s_vfp.ipk
+Size: 4583
+SHA256sum: 47cca86d6882f9b354f71ea72103691eae8893e0770741bc5e2381f2070deb2d
+Description:  This module contains some common parts needed by Broadcom Wireless drivers brcmsmac and brcmfmac.
+
+Package: kmod-cfg80211
+Version: 4.19.101+4.19.98-1-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), iw, wireless-regdb
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 142660
+Filename: kmod-cfg80211_4.19.101+4.19.98-1-1_arm_arm1176jzf-s_vfp.ipk
+Size: 142887
+SHA256sum: 012dfe23d03e6788c714271c8c0c5483ebab4304a53f9b497016b7ea92e93ba4
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
+Package: kmod-crypto-aead
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-crypto-null
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 3481
+Filename: kmod-crypto-aead_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 4217
+SHA256sum: 9f852b808d80fa5e8d3523c529d1c891b4a7e6676e5d98ac8eb9eb9a549027c9
+Description:  CryptoAPI AEAD support
+
+Package: kmod-crypto-arc4
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 1611
+Filename: kmod-crypto-arc4_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 2379
+SHA256sum: b92578d4cf969dda63e3413f9cb772731cb0d6e4da98e2e4bfb9223aa06ede90
+Description:  ARC4 cipher CryptoAPI module
+
+Package: kmod-crypto-authenc
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-crypto-manager, kmod-crypto-null
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 3676
+Filename: kmod-crypto-authenc_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 4418
+SHA256sum: 5660d98e84164319979587f675f03586d190e440ad0df35adc1705d1efe907de
+Description:  Combined mode wrapper for IPsec
+
+Package: kmod-crypto-ecb
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-crypto-manager
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 1908
+Filename: kmod-crypto-ecb_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 2688
+SHA256sum: 3e00456541e8ad9679fa9e59d51b23b6e08353b8cd3a069eb77e55f57745a6ca
+Description:  Electronic CodeBook CryptoAPI module
+
+Package: kmod-crypto-hash
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 240
+Filename: kmod-crypto-hash_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 966
+SHA256sum: 5337895468751704c1c057a816033431f1067c22c9c791fe84f161e32eb03dbb
+Description:  CryptoAPI hash support
+
+Package: kmod-crypto-manager
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-crypto-aead, kmod-crypto-hash, kmod-crypto-pcompress
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 2740
+Filename: kmod-crypto-manager_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 3489
+SHA256sum: 1d48f9ad1e55f1e80e57517bb237ce82fdcfddbdc42177197e9485fb5570bbbc
+Description:  CryptoAPI algorithm manager
+
+Package: kmod-crypto-null
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 2121
+Filename: kmod-crypto-null_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 2853
+SHA256sum: 85106d80edf9bf4e4402fb4c6e125aea2abff0c094dcb611757486d7da7fc9d7
+Description:  Null CryptoAPI module
+
+Package: kmod-crypto-pcompress
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 105
+Filename: kmod-crypto-pcompress_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 841
+SHA256sum: 45b366acbbd9805b3cd56d4187d221aac50ae81cbe28667719b96338db76ba07
+Description:  CryptoAPI Partial (de)compression operations
+
+Package: kmod-crypto-sha1
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 2138
+Filename: kmod-crypto-sha1_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 2864
+SHA256sum: 7dc836e6ff3e237cc5b9b1a62a68ef3634ff6cfb50da5086d6d79031fa5d1983
+Description:  SHA1 digest CryptoAPI module
+
+Package: kmod-cryptodev
+Version: 4.19.101+1.10-bcm27xx-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-crypto-authenc, kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 19506
+Filename: kmod-cryptodev_4.19.101+1.10-bcm27xx-1_arm_arm1176jzf-s_vfp.ipk
+Size: 20377
+SHA256sum: 71a71fec76d17aef6aa2349e98166017c2b4ae0200ea66e6caccb2731e80466e
+Description:  This is a driver for that allows to use the Linux kernel supported
+ hardware ciphers by user-space applications.
+
+Package: kmod-fs-vfat
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nls-base, kmod-nls-cp437, kmod-nls-iso8859-1, kmod-nls-utf8
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 40937
+Filename: kmod-fs-vfat_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 41747
+SHA256sum: b88d3d24bec9224cf92ec089e9718ed2acd5157048604f1820af973ca86597c1
+Description:  Kernel module for VFAT filesystem support
+
+Package: kmod-gre
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-iptunnel
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 13443
+Filename: kmod-gre_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 14193
+SHA256sum: 4817c5cd85695f4f2d4a11aa82412f7476ebd049398688138e289deee07fd464
+Description:  Generic Routing Encapsulation support
+
+Package: kmod-hid-generic
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-hid
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 1453
+Filename: kmod-hid-generic_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 2211
+SHA256sum: 1d8f82509d4ff396c7a35b564bb153598e6aa95a911ec602e99f87a14c0d7373
+Description:  Generic HID device support
+
+Package: kmod-hid
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-input-core, kmod-input-evdev
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 45396
+Filename: kmod-hid_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 44229
+SHA256sum: 3afccd16869f57ad29e4d480c0e4fcc7f8f40aa7aa4e9b35735610c4735d26d4
+Description:  Kernel modules for HID devices
+
+Package: kmod-ifb
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 3509
+Filename: kmod-ifb_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 4235
+SHA256sum: 02e97241b9d8248056f175b45cb9039cde39fe7464925573db4de4c2f279818b
+Description:  The Intermediate Functional Block
+
+Package: kmod-input-core
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 105
+Filename: kmod-input-core_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 838
+SHA256sum: 1b726bf2255c58881c3f8871aba91aba3dba06f1244d5a2fe0b5c1dcd54fc530
+Description:  Kernel modules for support of input device
+
+Package: kmod-input-evdev
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-input-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 7716
+Filename: kmod-input-evdev_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 8485
+SHA256sum: 224101a6d9ff2bd0af0d407648d3b50d36d72ea029c575ca611ae7c55a738205
+Description:  Kernel modules for support of input device events
+
+Package: kmod-ip6tables
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nf-reject6, kmod-nf-ipt6, kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 7078
+Filename: kmod-ip6tables_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 7820
+SHA256sum: 90a59014eb43b33594ae4727a1ab226628e813f9b7761c10f894310f93cde3ea
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipt-conntrack-extra
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ipt-core, kmod-ipt-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 14152
+Filename: kmod-ipt-conntrack-extra_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 14974
+SHA256sum: 7669cd29409d791da3f7396d5e7dcc917a796bc27b85e7ef2010c6b7b3a99419
+Description:  Netfilter (IPv4) extra kernel modules for connection tracking
+ Includes:
+ - connbytes
+ - connmark/CONNMARK
+ - conntrack
+ - helper
+ - recent
+
+Package: kmod-ipt-conntrack
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ipt-core, kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 5252
+Filename: kmod-ipt-conntrack_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 6025
+SHA256sum: 90098495629e1c317fba5f96588cfdd2093ac732840a901632f5db6d181c5f43
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nf-reject, kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 17345
+Filename: kmod-ipt-core_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 18144
+SHA256sum: f5e1d1ea177d2a26a515c83ca160d525d3bde0625c3720da04028d282a43f91a
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-fullconenat
+Version: 4.19.101+2018-12-15-d4daedd0-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nf-ipt, kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 4543
+Filename: kmod-ipt-fullconenat_4.19.101+2018-12-15-d4daedd0-1_arm_arm1176jzf-s_vfp.ipk
+Size: 5339
+SHA256sum: 5fe4c956ef0e4e4a76ab31269272293fb251037706f666f2daf3297dbb01451e
+Description:  FULLCONENAT netfilter module
+
+Package: kmod-ipt-ipopt
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 8095
+Filename: kmod-ipt-ipopt_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 8973
+SHA256sum: b80987ed1536f9dbc795befe1f249f5091c5fe3a6816613ee71a74d2fdd71d6a
+Description:  Netfilter (IPv4) modules for matching/changing IP packet options
+ Includes:
+ - CLASSIFY
+ - dscp/DSCP
+ - ecn/ECN
+ - hl/HL
+ - length
+ - mark/MARK
+ - statistic
+ - tcpmss
+ - time
+ - ttl/TTL
+ - unclean
+
+Package: kmod-ipt-ipset
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ipt-core, kmod-nfnetlink
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 115286
+Filename: kmod-ipt-ipset_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 115721
+SHA256sum: b260153d64ba8b9c0713e4c254c2f72fd51c387e379e65091fddbc4d65014fb4
+Description:  IPset netfilter modules
+
+Package: kmod-ipt-nat
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ipt-core, kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 4726
+Filename: kmod-ipt-nat_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 5503
+SHA256sum: 9c2558b41c993fe3e1e8bea26a4166d6a4b90543b5da5078f8a06fd2c8aa12be
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-offload
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ipt-core, kmod-nf-flow
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 3371
+Filename: kmod-ipt-offload_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 4116
+SHA256sum: 215af835795790fe469072f0a6214382f4ef135370bccc70ef8071c167740ac9
+Description:  Netfilter routing/NAT offload support
+
+Package: kmod-ipt-raw
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 1920
+Filename: kmod-ipt-raw_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 2648
+SHA256sum: 99daea4106753cdf7798f5ebf9e53eda5ba2bb4cb5e1c2dd99e49bec36c121c3
+Description:  Netfilter IPv4 raw table support
+
+Package: kmod-ipt-tproxy
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ipt-conntrack, kmod-nf-conntrack6, kmod-ip6tables, kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 8053
+Filename: kmod-ipt-tproxy_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 8845
+SHA256sum: 5d015622f9cc98cef4e117de071e80420a9e5093a6bee222777b5247dec7cd84
+Description:  Kernel modules for Transparent Proxying
+
+Package: kmod-iptunnel
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 8896
+Filename: kmod-iptunnel_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 9648
+SHA256sum: 359c8ceb4990b1c547684b3664e204071dc401e759997bf949621fbdebd26fa3
+Description:  Kernel module for generic IP tunnel support
+
+Package: kmod-lib-crc-ccitt
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 2178
+Filename: kmod-lib-crc-ccitt_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 2939
+SHA256sum: 714f80b8cf5e487e3b73083ecbd5a9b16ab98b0287eef93f682ad5c11e2dc377
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-lib-textsearch
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 4197
+Filename: kmod-lib-textsearch_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 4922
+SHA256sum: 4dbf24fd011487081d5bd3ab6b9e9d573c2de0f03f85ac747030dc1363a61287
+Description:  Textsearch support
+
+Package: kmod-mac80211
+Version: 4.19.101+4.19.98-1-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-cfg80211, hostapd-common
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 259521
+Filename: kmod-mac80211_4.19.101+4.19.98-1-1_arm_arm1176jzf-s_vfp.ipk
+Size: 258599
+SHA256sum: 57954df8bb06ebe4f6ff7439b6fc4b3cb189de47dc8dae19e6265c2ea1cc1b90
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
+Package: kmod-mmc
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 234
+Filename: kmod-mmc_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 953
+SHA256sum: 28bfe09360f196730f2b0cdf1083e3a9ddc1e27fd226b36b7189ba3cba076294
+Description:  Kernel support for MMC/SD cards
+
+Package: kmod-mppe
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ppp, kmod-crypto-arc4, kmod-crypto-sha1, kmod-crypto-ecb
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 5049
+Filename: kmod-mppe_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 5805
+SHA256sum: 2043fac3b6e523f481b1cccb9f7401b23f908c55042a3c7dc384e739d7db15d3
+Description:  Kernel modules for Microsoft PPP compression/encryption
+
+Package: kmod-nf-conntrack-netlink
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nfnetlink, kmod-ipt-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 14372
+Filename: kmod-nf-conntrack-netlink_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 15152
+SHA256sum: 2eccc8152adbc55f8aaec2ba9305ac4cd10e320e8c59bb6e4f135ad8369f2f9c
+Description:  Kernel modules support for a netlink-based connection tracking
+ userspace interface
+
+Package: kmod-nf-conntrack6
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 105
+Filename: kmod-nf-conntrack6_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 833
+SHA256sum: df0fab4f830afd7b760097417f16a03ddcfad3d9be3ec3073eb5c18644eacb09
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 48966
+Filename: kmod-nf-conntrack_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 49656
+SHA256sum: 83a97933e01239b588ca67eb44f841bcee5f159c7aafcf5e5cf57a006d35a775
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-flow
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 11189
+Filename: kmod-nf-flow_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 11925
+SHA256sum: 9e16d1f4589c85c657d0ba3e47ac560344df593e2f5b0280b0e495b3669c4511
+Description:  Netfilter flowtable support
+
+Package: kmod-nf-ipt6
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 7980
+Filename: kmod-nf-ipt6_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 8715
+SHA256sum: efabc2c9ce4c6aaea91acb19d2f87e13b06f42f8c5e397882dcc84827910d75a
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 16589
+Filename: kmod-nf-ipt_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 17223
+SHA256sum: 9fd84d84dbd802fdbff72bdecad07a293d2cacb78eb195080f610985edf4b8b1
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 13088
+Filename: kmod-nf-nat_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 13839
+SHA256sum: a9b0a798950be3d6cfc9102f0557267652de711cd2fb0e4bdeaa76f9c5607967
+Description:  Netfilter NAT
+
+Package: kmod-nf-nathelper-extra
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nf-nat, kmod-lib-textsearch, kmod-ipt-raw, kmod-asn1-decoder
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 52848
+Filename: kmod-nf-nathelper-extra_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 53706
+SHA256sum: 036413798c790e658682b02c04815b365c557cc4c295eb4bf42765e9ff6072fa
+Description:  Extra Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - amanda
+ - h323
+ - irc
+ - mms
+ - pptp
+ - proto_gre
+ - sip
+ - snmp_basic
+ - tftp
+ - broadcast
+
+Package: kmod-nf-nathelper
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 5736
+Filename: kmod-nf-nathelper_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 6497
+SHA256sum: b941eaa27b6ab04f114341084fc8095230e22e8dac2f047219768374ccb2d8cb
+Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - ftp
+
+Package: kmod-nf-reject6
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 2411
+Filename: kmod-nf-reject6_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 3172
+SHA256sum: fb623e4169744674adec99de86c9bc35f7a4603f79c52303eee4caf87f379362
+Description:  Netfilter IPv6 reject support
+
+Package: kmod-nf-reject
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 2068
+Filename: kmod-nf-reject_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 2827
+SHA256sum: 593300919c21c325d0a6a90e39ef2009aa3c69f3a664748ddb1be75b9f806c9a
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-nfnetlink
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 4517
+Filename: kmod-nfnetlink_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 5252
+SHA256sum: 626e40eeebd4d03602241d50901b2ff0531ca36b2d836f618152e90885d06bb3
+Description:  Kernel modules support for a netlink-based userspace interface
+
+Package: kmod-nls-base
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 105
+Filename: kmod-nls-base_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 842
+SHA256sum: b943f394496859447a9ce8e5851191cfa96c644ccde02add156495fa350fc60e
+Description:  Kernel module for NLS (Native Language Support)
+
+Package: kmod-nls-cp437
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nls-base
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 2431
+Filename: kmod-nls-cp437_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 3197
+SHA256sum: 811706d79a7bf73d25cfd80b00966ef63c05bb77281be54513fd11a4afe673dd
+Description:  Kernel module for NLS Codepage 437 (United States, Canada)
+
+Package: kmod-nls-iso8859-1
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nls-base
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 2110
+Filename: kmod-nls-iso8859-1_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 2855
+SHA256sum: aca2640bdb55701db5491d66692ab6c83a024777ea5775ea961ec99ed9af95ee
+Description:  Kernel module for NLS ISO 8859-1 (Latin 1)
+
+Package: kmod-nls-utf8
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nls-base
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 1339
+Filename: kmod-nls-utf8_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 2106
+SHA256sum: b8d94d0219f99820c5efb24526cc66c9532b3592bed42f2c53b6a4ceef82fd45
+Description:  Kernel module for NLS UTF-8
+
+Package: kmod-ppp
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-lib-crc-ccitt, kmod-slhc
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 21617
+Filename: kmod-ppp_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 22341
+SHA256sum: 76bcb378ec90dc99fc466271ce4f8f8aa317009a7b049dd120a3556eb6047fe4
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ppp, kmod-pppox
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 7875
+Filename: kmod-pppoe_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 8646
+SHA256sum: 01eb0679338932b42dca201270bdccd191006759c0af393c78b3b7fe924e1bac
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ppp
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 1851
+Filename: kmod-pppox_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 2616
+SHA256sum: f1f3584c3458d3b8b3a02c87c475e931362239684066b2d91bde38a1a9471274
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-rtl8192c-common
+Version: 4.19.101+4.19.98-1-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-rtlwifi
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 22113
+Filename: kmod-rtl8192c-common_4.19.101+4.19.98-1-1_arm_arm1176jzf-s_vfp.ipk
+Size: 22856
+SHA256sum: 6f799d51cc73f15803381aad3e190b719e61163eb9747df6b14c23a831460527
+Description:  Realtek RTL8192CE/RTL8192CU common support module
+
+Package: kmod-rtl8192cu
+Version: 4.19.101+4.19.98-1-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-rtlwifi-usb, kmod-rtl8192c-common, rtl8192cu-firmware
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 32667
+Filename: kmod-rtl8192cu_4.19.101+4.19.98-1-1_arm_arm1176jzf-s_vfp.ipk
+Size: 33431
+SHA256sum: bad3aaf3345440901f286f74be882eb712129cecc6ec36e641ee01e1b2c6dcc2
+Description:  Realtek RTL8192CU/RTL8188CU support
+
+Package: kmod-rtlwifi-usb
+Version: 4.19.101+4.19.98-1-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-usb-core, kmod-rtlwifi
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 7246
+Filename: kmod-rtlwifi-usb_4.19.101+4.19.98-1-1_arm_arm1176jzf-s_vfp.ipk
+Size: 8083
+SHA256sum: 1f120f2181e8df9c449bd815f6dcf064bc7c5e5537ceaa9ba2d093b8c5026d11
+Description:  Realtek common driver part (USB support)
+
+Package: kmod-rtlwifi
+Version: 4.19.101+4.19.98-1-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-mac80211
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 44789
+Filename: kmod-rtlwifi_4.19.101+4.19.98-1-1_arm_arm1176jzf-s_vfp.ipk
+Size: 45477
+SHA256sum: 3a02f1c380c53a7391c0e8d0bd04963a6cb01fb56f15b58369d9c3bc967fc8bf
+Description:  Realtek common driver part
+
+Package: kmod-sched-cake
+Version: 4.19.101+2019-03-12-057c7388-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-ipt-conntrack
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 18017
+Filename: kmod-sched-cake_4.19.101+2019-03-12-057c7388-1_arm_arm1176jzf-s_vfp.ipk
+Size: 18878
+SHA256sum: f8c1264392f5fa8b0bf5067495a05879e32782b5c2510cd4658cefb911d5be4d
+Description:  Common Applications Kept Enhanced fq_codel/blue derived shaper
+
+Package: kmod-sched-core
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 54120
+Filename: kmod-sched-core_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 54947
+SHA256sum: 58b730cef3c315324e2863322af4f217ab9d18be93feb99d8f20e628d1d3bc38
+Description:  Core kernel scheduler support for IP traffic
+
+Package: kmod-slhc
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-lib-crc-ccitt
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 3746
+Filename: kmod-slhc_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 4471
+SHA256sum: d242ee375d270ab23c90357a2db2db8f8ebb4ae3cc9b73cbb35b83bfe2eb1bb8
+Description:  Serial Line Header Compression
+
+Package: kmod-sound-arm-bcm2835
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 8499
+Filename: kmod-sound-arm-bcm2835_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 9293
+SHA256sum: 94a28c9addd7fe5e9eca9d0fbdcc9181ef0331fe21f6511c4c4a6109497ded62
+Description:  This package contains the BCM2835 ALSA pcm card driver
+
+Package: kmod-sound-core
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-input-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 127919
+Filename: kmod-sound-core_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 128586
+SHA256sum: b222e18e8deca49e608012ed07b8b23b6eb4c22e6d068cbda670b47f88fc6198
+Description:  Kernel modules for sound support
+
+Package: kmod-tcp-bbr
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 5240
+Filename: kmod-tcp-bbr_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 6086
+SHA256sum: edd4770efe96de26e0157f48ace945865f7d7adf0d6b88d26e5cd2c494d6cef5
+Description:  Kernel module for BBR (Bottleneck Bandwidth and RTT) TCP congestion
+ control. It requires the fq ("Fair Queue") pacing packet scheduler.
+ For kernel 4.13+, TCP internal pacing is implemented as fallback.
+
+Package: kmod-usb-core
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-nls-base
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 238
+Filename: kmod-usb-core_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 969
+SHA256sum: 9a773565418f45d7096cef700fe220fa6bd30df2dddcd03bbe34d591e7bd3c70
+Description:  Kernel support for USB
+
+Package: kmod-usb-hid
+Version: 4.19.101-1
+Depends: kernel (=4.19.101-1-f7345088efa23f1d877953015fb5b32f), kmod-hid, kmod-hid-generic, kmod-input-evdev, kmod-usb-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 15643
+Filename: kmod-usb-hid_4.19.101-1_arm_arm1176jzf-s_vfp.ipk
+Size: 16437
+SHA256sum: 1746326a3c9481e3c6575edbdf6f81aefd437936859481d17a673095b130858b
+Description:  Kernel support for USB HID devices such as keyboards and mice
+
+Package: libgcc
+Version: 7.5.0-1
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 20003
+Filename: libgcc_7.5.0-1_arm_arm1176jzf-s_vfp.ipk
+Size: 20744
+SHA256sum: 4efe1f13e02093f57d0b274a11c4a40c1bffe0ba39cf65c4d547b4161086c6d8
+Description:  GCC support library
+
+Package: libip4tc
+Version: 1.8.2-2
+Depends: libc, libxtables
+License: GPL-2.0
+Section: libs
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 19600
+Filename: libip4tc_1.8.2-2_arm_arm1176jzf-s_vfp.ipk
+Size: 20322
+SHA256sum: 0526de6d5ad1af0acbd080e46a7cdf1b69700e604f2fcf5cabff27fd8ab64475
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc
+Version: 1.8.2-2
+Depends: libc, libxtables
+License: GPL-2.0
+Section: libs
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 19271
+Filename: libip6tc_1.8.2-2_arm_arm1176jzf-s_vfp.ipk
+Size: 19999
+SHA256sum: 02f007c2c3f41ce319bd4f08a5c924fa4b487531547c44e81c0735a1d2db2c40
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 2019-09-22-313e8270-1
+Depends: libc, libiwinfo, liblua
+License: GPL-2.0
+Section: lang
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 6398
+Filename: libiwinfo-lua_2019-09-22-313e8270-1_arm_arm1176jzf-s_vfp.ipk
+Size: 7227
+SHA256sum: cbf8d61a852046542f0f9a5a9df2a5dac1deaf9eabf5bd38f83bbc8e06e69c52
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo
+Version: 2019-09-22-313e8270-1
+Depends: libc, libnl-tiny, libuci, libubus
+License: GPL-2.0
+Section: libs
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 26185
+Filename: libiwinfo_2019-09-22-313e8270-1_arm_arm1176jzf-s_vfp.ipk
+Size: 26894
+SHA256sum: 3b251194750e35c8ef203982c71fc8a79e7e55af8df2775e00377451b7f5bf99
+Description:  Wireless information library with consistent interface for proprietary Broadcom,
+ nl80211 and wext driver interfaces.
+
+Package: libpthread
+Version: 1.1.24-1
+Depends: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 124
+Filename: libpthread_1.1.24-1_arm_arm1176jzf-s_vfp.ipk
+Size: 878
+SHA256sum: 74c127935f77519b05698e85d12e820a915698bda05b8e640e02ab383b6d8c73
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.1.24-1
+Depends: libpthread
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 124
+Filename: librt_1.1.24-1_arm_arm1176jzf-s_vfp.ipk
+Size: 890
+SHA256sum: ed952f1e0c4cf2aaf15d0a0f0cf37ab9b3eec6f5f18d43ac5153b4b672d48c36
+Description:  POSIX.1b RealTime extension library
+
+Package: libxtables
+Version: 1.8.2-2
+Depends: libc
+License: GPL-2.0
+Section: libs
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 43882
+Filename: libxtables_1.8.2-2_arm_arm1176jzf-s_vfp.ipk
+Size: 44598
+SHA256sum: 299d6584b17fb9b02b7c075f0d8b3d6d8d38ca85f63d431b75c9a4cc7c516d01
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 23
+Depends: libc, libubox
+License: GPL-2.0+
+Section: utils
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 11728
+Filename: mtd_23_arm_arm1176jzf-s_vfp.ipk
+Size: 12471
+SHA256sum: e00aea02298d1e433d97793ffa9b3748330e012003370c3f04a70032fb04f49d
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
